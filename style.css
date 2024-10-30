@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1a0327;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 350vh;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(./neww.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 300px;
+    height: 10v;
+    background: rgb(9, 2, 149);
+    display: flex;
+    align-items: center;
+    color: #fff;
+    clip-path: polygon(1% 0, 100% 0%, 68% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+
+}
+.logo .fas{
+    font-size: 50px;
+}
+.logo p{
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+}
+ul.navbar li {
+    width: 120px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+ul.navbar li a.active{
+    color:blue;
+}
+ul.navbar li a:hover:not(.active){
+    color: blue;
+}
+#btn{
+    width: 250px;
+    height: 10vh;
+    background: rgb(9, 2, 149);
+    color:#fff;
+    outline: none;
+    border: none;
+    clip-path: polygon(28% 0, 100% 0%, 100% 100%, 0% 100%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 40px;
+}
+#btn .fa{
+    margin-right: 10px;
+}
+/*header ends here */
+
+.content-wrapper{
+    width: 80%;
+    min-height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+}
+.content-desc h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.content-desc p {
+    width: 550px;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.content-desc span{
+    color:  rgb(204, 5, 5);
+}
+
+#btn-2{
+    width: 350px;
+    height: 10vh;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    background:  rgb(9, 2, 149);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    clip-path: polygon(0 0, 67% 0, 100% 100%, 0% 100%);
+    border-radius: 20px;
+    text-align: left;
+}
+.Sparrow{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(rgba(38,2,39,0.849)rgba(100,100,7));
+    position: relative;
+}
+.Sparrow::after{
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: url(./wallpaper.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: -150px;
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.logo-section h1{
+    width: 250px;
+    font-size: 2rem;
+    color: blue;
+    margin-left: 10px;
+}
+
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.767),rgba(0,0,0,0.712)),url(./wallpaper2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.section-1-wrapper{
+    width: 70%;
+    margin: auto;
+}
+.section-1 h1{
+    font-size: 1.5rem;
+    color: aquamarine;
+    font-weight: 450;
+}
+.section-1-img{
+    display: flex;
+}
+/*image 1*/
+.section-1-img .img{
+    width: 100px;
+    height: 130px;
+    background: url(./Fifa\ 24\ Poster.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.section-1-img .img-2{
+    background: url(./COD.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-3{
+    background: url(./Forza\ Horizon\ 5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-4{
+    background: url(./God\ of\ War.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-5{
+    background: url(./injustice.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-6{
+    background: url(./mk.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-7{
+    background: url(./need\ for\ speed.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-8{
+    background: url(./Tekken\ 8\ poster.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img:hover{
+    transform: translateY(-10px);
+}
+.game-categories{
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+.game-categories h1{
+    font-size: 1.5rem;
+    margin: 30px 0;
+    color: aquamarine;
+}
+.game-wrapper{
+    display: flex;
+}
+.gw{
+    width: 120px;
+    height: 120px;
+    background: url(./forza.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px 0 0;
+    border-radius: 10px;
+}
+.gw:hover{
+    transform: translateY(-10px);
+}
+.left{
+    position: relative;
+    right:-140px;
+}
+
+.gw-1{
+    background: url(./minecraft.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-2{
+    background: url(./Grand\ Theft\ Auto\ V.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-3{
+    background: url(./spiderman.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-4{
+    background: url(./Star\ Wars\ Jedi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-5{
+    background: url(./The\ Last\ of\ Us.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-6{
+    background: url(./assasins\ creed.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-7{
+    background: url(./Apex\ legends.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-8{
+    background: url(./halo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-9{
+    background: url(./Resident\ Evil\ 4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-2{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./Jocker.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-2 h1{
+    font-size: 2rem;
+    color: #fff;
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-image{
+    width: 200px;
+    height: 200px;
+    background: url(./character2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+.p-image::after{
+    content: 'vs';
+    position: relative;
+    right: -35px;
+    bottom: 0;
+    font-size: 2rem;
+    color: blue;
+}
+.players span{
+    font-size: 1.5rem;
+    color: aqua;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.stars{
+    color: purple;
+}
+.p-image-2{
+    background: url(./character3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.p-image-3{
+    background: url(./character4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.p-image-4{
+    background: url(./character5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-3{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./wallpaper5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.section-3 h1{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+}
+.section-3-wrapper{
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+.feedback{
+    width: 250px;
+    height: 500px;
+    background: url(./wallpaper.png);
+    background-size: cover;
+    background-position: center;
+}
+.feedback-desc{
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,0.767);
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+}
+.f-image-2{
+    background: url(.//Jocker.jpg);
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    width: 100%;
+    height: 55vh;
+    background: #282828;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.footer-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-logo{
+    height: 12vh;
+    background: aqua;
+    color: black;
+    line-height: 1.7rem;
+}
+ul h3{
+    color: #fff;
+    font-weight: 450;
+}
+ul li{
+    list-style: none;
+    line-height: 2.5rem;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a:hover{
+    color:purple;
+}
+.footer-bottom{
+    width: 100%;
+    height: 7vh;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+}
+.footer-bottom span{
+    color: aqua;
+    font-weight: bold;
+}
